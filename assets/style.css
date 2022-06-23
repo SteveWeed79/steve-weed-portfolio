@@ -3,6 +3,11 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+
+header {
+    margin: 3% 3% 0 3%;
+}
+
 .container {
     display: flex;
     justify-content: flex-end;
@@ -22,13 +27,24 @@
 
 body {
     min-width: 400px;
-    background-image: url("/images/background.png");
 }
 
+/*
+#background-img {
+    background-image: linear-gradient(to right, darkgrey, white);
+
+}
+*/
+#background-img {
+    background-color: rgb(238, 231, 215)
+}
 
 .hero {
+    display: flexbox;
     width: 100%;
     max-height: 400px;
+    margin: 1% 0 1% 0;
+    border: 6px outset rgb(59, 48, 18);
 }
 
 .card {
@@ -39,11 +55,12 @@ body {
 }
 
 .left-card {
-    display: flex;
+    display: flexbox;
     min-width: 15%;
-    margin-right: 3%;
+    margin-left: 3%;
+    margin-right: 1%;
     font-size: 30px;
-    justify-content: flex-end;
+    border-right: 6px rgb(224, 231, 0) solid;
 }
 
 .right-card {
@@ -51,43 +68,44 @@ body {
     flex-wrap: wrap;
     font-size: 20px;
     justify-content: center;
+    text-align: center;
 }
 
 .hero-img {
     flex: 0 4 80%;
-    padding: 3px;
-
+    width: 80%;
+    border: 2px black solid;
+    margin: 4px;
 }
 
 
 .img {
-    padding: 3px;
+
     max-width: 40%;
+    margin: 3px 3px 3px 1px;
+    border: 2px black solid;
 }
 
 footer {
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
+    padding-bottom: 4%;
 }
 
-#footer-name {
-    text-align: right;
-    min-width: 30%;
-}
 
 .footer-links {
     min-width: 70%;
+    text-align: center;
+
 }
 
 
 @media only screen and (max-width: 900px) {
     header {
-        flex-direction: space-around;
+        text-align: center;
     }
 
     body {
-        background-color: lightblue;
         flex-direction: column;
     }
 
@@ -97,6 +115,27 @@ footer {
 
     .right-card {
         flex-direction: column;
+        align-items: center;
+    }
+
+    .left-card {
+        border-bottom: 6px solid black;
+        border-right: none;
+    }
+
+    .hero-img {
+        max-width: 80%;
+    }
+
+    .img {
+        max-width: 80%;
+    }
+
+    .links {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 0;
     }
 
 }
