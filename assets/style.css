@@ -11,7 +11,6 @@
 
 .header {
     font-size: 300%;
-    background-color: blue;
 }
 
 .links {
@@ -23,9 +22,7 @@
 
 body {
     min-width: 400px;
-    background-color: red;
-
-
+    background-image: url(./images/background.png)
 }
 
 
@@ -47,7 +44,6 @@ body {
     margin-right: 3%;
     font-size: 30px;
     justify-content: flex-end;
-    background-color: green;
 }
 
 .right-card {
@@ -55,14 +51,14 @@ body {
     flex-wrap: wrap;
     font-size: 20px;
     justify-content: center;
-    background-color: purple;
 }
 
 .hero-img {
-    display: flex;
+    flex: 0 4 80%;
     padding: 3px;
-    max-width: 80%;
+
 }
+
 
 .img {
     padding: 3px;
@@ -81,7 +77,7 @@ footer {
 }
 
 .footer-links {
-    min-width 70%;
+    min-width: 70%;
 }
 
 
