@@ -8,6 +8,12 @@ header {
     margin: 3% 3% 0 3%;
 }
 
+.man {
+    display: inline-flex;
+    max-width: 3%;
+    justify-self: right;
+}
+
 .container {
     display: flex;
     justify-content: flex-end;
@@ -47,6 +53,11 @@ body {
     border: 6px outset rgb(59, 48, 18);
 }
 
+p {
+    margin-right: 2%;
+    font-size: 20px;
+}
+
 .card {
     display: flex;
     width: 100%;
@@ -73,7 +84,7 @@ body {
 
 .hero-img {
     flex: 0 4 80%;
-    width: 80%;
+    width: 87.5%;
     border: 2px black solid;
     margin: 4px;
 }
@@ -81,7 +92,7 @@ body {
 
 .img {
 
-    width: 40%;
+    width: 41%;
     margin: 3px 3px 3px 1px;
     border: 2px black solid;
 }
@@ -134,8 +145,17 @@ footer {
     .links {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        margin-left: 0;
+        justify-content: space-evenly;
+        margin-left: 3%;
+        text-align: center;
     }
 
+    .man {
+        display: none;
+    }
+
+    p {
+        margin-right: 3%;
+        margin-left: 3%;
+    }
 }
