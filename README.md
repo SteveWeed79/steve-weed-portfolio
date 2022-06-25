@@ -4,7 +4,7 @@
 
 This project is a Portfolio for myself and my current and future works.  
 
-- I am excited by this project because it makes the idea of me coding more in the future seem more real.
+- I am excited by this project because it makes the idea of me coding more in the future seem real.
 - I enjoy having a place on the web about me, my thoughts and my work.  
 - I can continue to work and improve my site with time as my skills and knowledge improve.
 - I learned a great deal about CSS flexbox and how to position items.  Also, I learned that I need make sure to account for image size when building sights so that they fit well together on the page.  
@@ -12,7 +12,7 @@ This project is a Portfolio for myself and my current and future works.
 
 ## Installation
 
-No installation
+No installation requried
 
 ## Usage
 
