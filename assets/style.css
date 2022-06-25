@@ -13,10 +13,11 @@ header {
 
 .man {
     display: inline-flex;
-    max-width: 8%;
+    max-width: 10%;
     justify-self: right;
     border-radius: 50%;
     margin-right: 2%;
+    border: 2px rgb(224, 231, 0) solid;
 }
 
 .container {
