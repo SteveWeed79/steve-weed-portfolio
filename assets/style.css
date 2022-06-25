@@ -3,6 +3,9 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+#background-img {
+    background-color: rgb(238, 231, 215)
+}
 
 header {
     margin: 3% 3% 0 3%;
@@ -35,15 +38,6 @@ body {
     min-width: 400px;
 }
 
-/*
-#background-img {
-    background-image: linear-gradient(to right, darkgrey, white);
-
-}
-*/
-#background-img {
-    background-color: rgb(238, 231, 215)
-}
 
 .hero {
     display: flexbox;
@@ -87,6 +81,7 @@ p {
     width: 87.5%;
     border: 2px black solid;
     margin: 4px;
+    border-radius: 2%;
 }
 
 
@@ -95,6 +90,7 @@ p {
     width: 41%;
     margin: 3px 3px 3px 1px;
     border: 2px black solid;
+    border-radius: 2%;
 }
 
 footer {
@@ -111,7 +107,15 @@ footer {
 }
 
 
+@media only screen and (max-width: 2515px) {
+
+    .hero-img {
+        max-width: 80%;
+    }
+}
+
 @media only screen and (max-width: 900px) {
+
     header {
         text-align: center;
     }
