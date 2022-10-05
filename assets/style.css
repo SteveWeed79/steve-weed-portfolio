@@ -1,173 +1,167 @@
 * {
-    box-sizing: border-box;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 #background-img {
-    background-color: lightgray
+  background-color: #ebebeb;
 }
 
 header {
-    margin: 3% 3% 0 3%;
+  margin: 3% 3% 0 3%;
+}
+
+header h1 {
+  font-family: "Play", sans-serif;
 }
 
 .man {
-    display: inline-flex;
-    max-width: 10%;
-    justify-self: right;
-    border-radius: 50%;
-    margin-right: 2%;
-    border: 2px black solid;
+  display: inline-flex;
+  max-width: 10%;
+  justify-self: right;
+  border-radius: 50%;
+  margin-right: 2%;
+  border: 2px black solid;
 }
 
 .container {
-    display: flex;
-    justify-content: flex-end;
-    padding-left: 3%;
+  display: flex;
+  justify-content: flex-end;
+  padding-left: 3%;
 }
 
 .header {
-    font-size: 300%;
+  font-size: 400%;
 }
 
 .links {
-
-    color: black;
-    font-weight: bold;
-    font-size: 25px;
-    margin-left: 2%;
+  color: black;
+  font-weight: bold;
+  font-size: 25px;
+  margin-left: 2%;
 }
 
 body {
-    min-width: 400px;
-    display: flex;
-    flex-wrap: wrap;
+  min-width: 400px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-
 .hero {
-
-    width: 100%;
-    max-height: auto;
-    margin: 1% 0 1% 0;
-
+  width: 100%;
+  max-height: auto;
+  margin: 1% 0 1% 0;
 }
 
 p {
-    margin-right: 2%;
-    font-size: 20px;
+  margin-right: 2%;
+  font-size: 20px;
 }
 
 .card {
-    display: flex;
-    width: 100%;
-    padding-bottom: 3%;
-    justify-content: center;
+  display: flex;
+  width: 100%;
+  padding-bottom: 3%;
+  justify-content: center;
 }
 
 .left-card {
-    min-width: 15%;
-    margin-left: 3%;
-    margin-right: 1%;
-    font-size: 30px;
-    border-right: 6px #a62424 solid;
+  min-width: 15%;
+  margin-left: 3%;
+  margin-right: 1%;
+  font-size: 30px;
+  border-right: 6px #a62424 solid;
 }
 
 .right-card {
-    font-size: 20px;
-    justify-content: space-evenly;
-    text-align: center;
+  font-size: 20px;
+  justify-content: space-evenly;
+  text-align: center;
 }
 
 .hero-img {
-    width: 80%;
-    border: 2px black solid;
-    margin: 4px;
-    border-radius: 2%;
+  width: 80%;
+  border: 2px black solid;
+  margin: 4px;
+  border-radius: 2%;
 }
 
-
 .img {
-
-    width: 40%;
-    margin: 3px 3px 3px 1px;
-    border: 2px black solid;
-    border-radius: 2%;
+  width: 40%;
+  margin: 3px 3px 3px 1px;
+  border: 2px black solid;
+  border-radius: 2%;
 }
 
 .imgFlex {
-    display: inline-flexbox;
+  display: inline-flexbox;
 }
 
 footer {
-    display: flex;
-    flex-wrap: wrap;
-    padding-bottom: 4%;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 4%;
 }
-
 
 .footer-links {
-    display: flex;
-    justify-content: center;
-    min-width: 81%;
-    text-align: center;
-
+  display: flex;
+  justify-content: center;
+  min-width: 81%;
+  text-align: center;
 }
 
-
 @media only screen and (max-width: 2515px) {
-
-    .hero-img {
-        max-width: 80%;
-    }
+  .hero-img {
+    max-width: 80%;
+  }
 }
 
 @media only screen and (max-width: 900px) {
+  header {
+    text-align: center;
+  }
 
-    header {
-        text-align: center;
-    }
+  body {
+    flex-direction: column;
+  }
 
-    body {
-        flex-direction: column;
-    }
+  section {
+    flex-direction: column;
+  }
 
-    section {
-        flex-direction: column;
-    }
+  .right-card {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .right-card {
-        flex-direction: column;
-        align-items: center;
-    }
+  .left-card {
+    border-bottom: 6px solid black;
+    border-right: none;
+  }
 
-    .left-card {
-        border-bottom: 6px solid black;
-        border-right: none;
-    }
+  .hero-img {
+    max-width: 80%;
+  }
 
-    .hero-img {
-        max-width: 80%;
-    }
+  .img {
+    width: 80%;
+  }
 
-    .img {
-        width: 80%;
-    }
+  .links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 3%;
+    text-align: center;
+  }
 
-    .links {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        margin-left: 3%;
-        text-align: center;
-    }
+  .man {
+    display: none;
+  }
 
-    .man {
-        display: none;
-    }
-
-    p {
-        margin-right: 3%;
-        margin-left: 3%;
-    }
+  p {
+    margin-right: 3%;
+    margin-left: 3%;
+  }
 }
